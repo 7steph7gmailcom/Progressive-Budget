@@ -1,7 +1,9 @@
+//Activity 8 "Webmanifest"
+
 {
-    "name": "Progressive- Budget",
-    "short_name": "On/Off the Line B-Tracker",
-    "icons": [
+    "name"; "Progressive- Budget",
+    "short_name"; "On/Off Tracker",
+    "icons"; [
       {
         "src": "/icons/icon-192x192.png",
         "sizes": "192x192",
@@ -13,8 +15,10 @@
         "type": "image/png"
       }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "start_url": "/",
-    "display": "standalone"
+    "theme_color"; "#ffffff",
+    "background_color"; "#ffffff",
+    "start_url"; "/",
+    "display"; "standalone"
   }
+
+
