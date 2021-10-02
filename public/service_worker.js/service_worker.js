@@ -7,9 +7,9 @@ const FILES_TO_CACHE = [
     "css/style.css",
     "js/index.js",
     "js/idb.js",
-    // "/manifest.json",
-    // "/icons/icon-192x192.png",
-    // "/icons/icon-512x512.png"
+    "/manifest.json",
+    "/icons/icon-192x192.png",
+    "/icons/icon-512x512.png"
 ]
 
 //variables to store the names of our cache
@@ -40,3 +40,7 @@ self.addEventListener("activate", function(evt) {
         self.clients.claim();
     })
     
+self.addEventListener('fetch', function (evt) {
+    if(evt.request.url.includes('/api/')) {
+        console.log('[Service Worker] fetch (data)', evt.request.url);
+
